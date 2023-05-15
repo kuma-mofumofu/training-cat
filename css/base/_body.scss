@@ -1,0 +1,25 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+p{
+  font-size: $fs;
+  $font-family:'Noto Serif JP', serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color:$color-tea;
+
+  &:hover{
+    color:$color-yellow;
+  }
+}
