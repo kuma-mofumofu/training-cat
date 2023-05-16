@@ -28,7 +28,10 @@
       </div><!-- /header--first -->
 
       <div class="header--last">
-        <img src="image/bg_top_header.jpg" alt="">
+        <picture>
+          <source media="(max-width: 800px)" srcset="image/bg_top_header_sp.jpg">
+          <img src="image/bg_top_header.jpg" alt="">
+        </picture>
         <nav>
           <ul class="menu">
             <li><a href="#" class="menu-list">商品一覧</a></li>
@@ -50,7 +53,26 @@
       </div>
       <p>MENU</p>
     </div><!-- /burger -->
-    
+
+    <main>
+      <section class="container">
+        <div class="news">
+
+          <div class="news-title title">
+            <img src="#" alt="">
+            <h2>お知らせ</h2>
+            <div class="btn-tea">
+              <a href="#">
+                <span>一覧へ</span>
+              </a>
+            </div>
+          </div><!-- /news-title title -->
+
+        </div><!-- /news -->
+      </section>
+    </main>
+
+    <footer></footer>
   </div><!-- /top -->
 </body>
 </html>

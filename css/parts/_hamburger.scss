@@ -5,10 +5,17 @@
   height: 70px;
   border-radius: 50%;
   background: $color-tea;
-  position: relative;
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  display: none;
+
+  @media screen and (max-width:800px){
+    display: block;
+  }
 
   &:hover{
-    cursor:url(../../image/);
+    cursor:pointer;
   }
 
   > div{

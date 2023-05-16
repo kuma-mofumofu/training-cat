@@ -93,7 +93,7 @@ a:hover {
   background: #F5EFD7;
 }
 
-#header .header--last > img {
+#header .header--last picture img {
   width: 100%;
 }
 
@@ -106,6 +106,12 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  #header .header--last .menu {
+    display: none;
+  }
 }
 
 #header .header--last .menu li {
@@ -139,11 +145,20 @@ a:hover {
   height: 70px;
   border-radius: 50%;
   background: #341E12;
-  position: relative;
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    display: block;
+  }
 }
 
 .burger:hover {
-  cursor: url(../../image/);
+  cursor: pointer;
 }
 
 .burger > div {
@@ -169,6 +184,34 @@ a:hover {
 }
 
 /* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+.btn-tea {
+  width: 100px;
+  height: 30px;
+  background: #341E12;
+}
+
+.btn-tea a {
+  display: inline-block;
+}
+
+/* ===============================================
 # pages（ページ）
+=============================================== */
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
 =============================================== */
 /*# sourceMappingURL=style.css.map */

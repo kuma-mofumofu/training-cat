@@ -1,0 +1,11 @@
+@import "../global/variables";
+
+.btn-tea{
+  width: 100px;
+  height: 30px;
+  background: $color-tea;
+
+  a{
+    display: inline-block;
+  }
+}
