@@ -44,7 +44,6 @@ a {
   text-decoration: none;
   color: #341E12;
 }
-
 a:hover {
   color: #A88E25;
 }
@@ -68,62 +67,45 @@ a:hover {
 #header .header--first {
   max-width: 1084px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 35px;
 }
-
 #header .header--first .meaning > div {
   max-width: 624px;
   padding: 40px;
   border-top: solid 1px #341E12;
   border-bottom: solid 1px #341E12;
 }
-
 #header .header--first .meaning > div p {
   font-size: 20px;
   line-height: 2rem;
 }
-
 #header .header--last {
   background: #F5EFD7;
 }
-
 #header .header--last picture img {
   width: 100%;
 }
-
 #header .header--last .menu {
   max-width: 1084px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 @media screen and (max-width: 800px) {
   #header .header--last .menu {
     display: none;
   }
 }
-
 #header .header--last .menu li {
   position: relative;
 }
-
 #header .header--last .menu li .menu-list {
   padding: 25px 15px 25px 50px;
   display: inline-block;
   min-width: 161px;
 }
-
 #header .header--last .menu li .menu-list::before {
   content: url(../image/ico_paw.svg);
   position: absolute;
@@ -150,23 +132,19 @@ a:hover {
   bottom: 45px;
   display: none;
 }
-
 @media screen and (max-width: 800px) {
   .burger {
     display: block;
   }
 }
-
 .burger:hover {
   cursor: pointer;
 }
-
 .burger > div {
   position: absolute;
   top: 16px;
   left: 20px;
 }
-
 .burger > div span {
   display: block;
   width: 30px;
@@ -174,7 +152,6 @@ a:hover {
   background: #fff;
   margin-bottom: 7px;
 }
-
 .burger > p {
   font-size: 12px;
   color: #fff;
@@ -196,10 +173,16 @@ a:hover {
   width: 100px;
   height: 30px;
   background: #341E12;
+  border-radius: 5px;
 }
-
 .btn-tea a {
-  display: inline-block;
+  display: block;
+  padding: 0.5rem 0;
+}
+.btn-tea a span {
+  color: #fff;
+  display: block;
+  text-align: center;
 }
 
 /* ===============================================
@@ -214,4 +197,28 @@ a:hover {
 /* ===============================================
 # 色
 =============================================== */
-/*# sourceMappingURL=style.css.map */
+.news-title {
+  max-width: 1084px;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.news-title img {
+  margin-right: 20px;
+}
+.news-title .title--inner {
+  width: 100%;
+  border-bottom: 2px solid #CEB967;
+  display: flex;
+  padding-bottom: 7px;
+}
+.news-title .title--inner h2 {
+  width: 90%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.news--list li {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

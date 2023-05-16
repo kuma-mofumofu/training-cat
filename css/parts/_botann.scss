@@ -4,8 +4,16 @@
   width: 100px;
   height: 30px;
   background: $color-tea;
+  border-radius: 5px;
 
   a{
-    display: inline-block;
+    display: block;
+    padding: 0.5rem 0;
+
+    span{
+      color:$color-white;
+      display: block;
+      text-align: center;
+    }
   }
 }
