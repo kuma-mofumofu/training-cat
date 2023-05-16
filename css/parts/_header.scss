@@ -1,1 +1,59 @@
 @import "../global/variables";
+
+#header{
+
+  .header--first{
+    max-width: 1084px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap:35px;
+
+    .meaning{
+
+      > div{
+        max-width: 624px;
+        padding: 40px;
+        border-top: solid 1px $color-tea;
+        border-bottom: solid 1px $color-tea;
+
+        p{
+          font-size: 20px;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+
+  .header--last{
+    background: $color-cream;
+
+    > img{
+      width: 100%;
+    }
+
+    .menu{
+      max-width: 1084px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+      li{
+        position: relative;
+
+        .menu-list{
+          padding: 25px 15px 25px 50px;
+          display: inline-block;
+          min-width: 161px;
+
+          &::before{
+            content: url(../image/ico_paw.svg);
+            position: absolute;
+            top: 18px;
+            left: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,6 +14,15 @@
 /* ===============================================
 # base
 =============================================== */
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
 html {
   height: 100%;
 }
@@ -24,6 +33,7 @@ body {
 
 p {
   font-size: 16px;
+  color: #341E12;
 }
 
 ul {
@@ -55,6 +65,109 @@ a:hover {
 /* ===============================================
 # 色
 =============================================== */
+#header .header--first {
+  max-width: 1084px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+}
+
+#header .header--first .meaning > div {
+  max-width: 624px;
+  padding: 40px;
+  border-top: solid 1px #341E12;
+  border-bottom: solid 1px #341E12;
+}
+
+#header .header--first .meaning > div p {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+#header .header--last {
+  background: #F5EFD7;
+}
+
+#header .header--last > img {
+  width: 100%;
+}
+
+#header .header--last .menu {
+  max-width: 1084px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .header--last .menu li {
+  position: relative;
+}
+
+#header .header--last .menu li .menu-list {
+  padding: 25px 15px 25px 50px;
+  display: inline-block;
+  min-width: 161px;
+}
+
+#header .header--last .menu li .menu-list::before {
+  content: url(../image/ico_paw.svg);
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+.burger {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #341E12;
+  position: relative;
+}
+
+.burger:hover {
+  cursor: url(../../image/);
+}
+
+.burger > div {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+
+.burger > div span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 7px;
+}
+
+.burger > p {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: 43px;
+  left: 16px;
+}
+
 /* ===============================================
 # pages（ページ）
 =============================================== */
