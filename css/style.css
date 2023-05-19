@@ -219,6 +219,10 @@ a:hover {
   font-weight: bold;
 }
 
+.news--list {
+  max-width: 1084px;
+  margin: 0 auto;
+}
 .news--list li {
   display: flex;
 }/*# sourceMappingURL=style.css.map */
