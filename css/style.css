@@ -197,32 +197,120 @@ a:hover {
 /* ===============================================
 # 色
 =============================================== */
-.news-title {
+.title {
   max-width: 1084px;
   display: flex;
   align-items: flex-end;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto 40px auto;
 }
-.news-title img {
+.title img {
   margin-right: 20px;
 }
-.news-title .title--inner {
+.title .title--inner {
   width: 100%;
   border-bottom: 2px solid #CEB967;
   display: flex;
   padding-bottom: 7px;
 }
-.news-title .title--inner h2 {
+.title .title--inner h2 {
   width: 90%;
   font-size: 30px;
   font-weight: bold;
 }
 
+/* ===============================================
+# お知らせ
+=============================================== */
 .news--list {
   max-width: 1084px;
   margin: 0 auto;
 }
 .news--list li {
   display: flex;
+  align-items: center;
+  border-top: dotted 2px #CEB967;
+  padding: 22px 0;
+}
+.news--list li:last-child {
+  border-bottom: dotted 2px #CEB967;
+  margin-bottom: 100px;
+}
+.news--list li .icon {
+  width: 92px;
+  text-align: center;
+  margin: 0 15px 0 22px;
+  padding: 4px 0;
+}
+.news--list li .icon span {
+  font-size: 12px;
+}
+.news--list li .icon-red {
+  background: #F7320E;
+}
+.news--list li .icon-red span {
+  color: #fff;
+}
+.news--list li .icon-cream {
+  background: #F5EFD7;
+}
+.news--list li .icon-cream span {
+  color: #341E12;
+}
+
+/* ===============================================
+# おすすめ商品
+=============================================== */
+.recommendation--list {
+  max-width: 1084px;
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+}
+.recommendation--list li {
+  flex-grow: 1;
+  width: calc(33.3333333333% - 40px);
+  padding: 15px 20px;
+  border: solid 1px #dddddd;
+}
+.recommendation--list li img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.recommendation--list li h3 {
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  border-bottom: dotted 2px #341E12;
+}
+.recommendation--list li > p {
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+.recommendation--list li .fee {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.recommendation--list li .fee span {
+  font-size: 12px;
+  font-weight: normal;
+}
+.recommendation--list li .btn {
+  border: solid 1px #341E12;
+  text-align: center;
+  border-radius: 5px;
+}
+.recommendation--list li .btn a {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  padding: 15px 0;
+}
+.recommendation--list li .btn a span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px #341E12;
+  border-right: solid 2px #341E12;
+  transform: rotate(45deg);
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
