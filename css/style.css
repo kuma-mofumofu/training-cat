@@ -50,6 +50,7 @@ a:hover {
 
 .container {
   padding: 0 20px;
+  margin-bottom: 100px;
 }
 
 /* ===============================================
@@ -267,13 +268,39 @@ a:hover {
   gap: 20px;
 }
 .recommendation--list li {
+  display: grid;
   flex-grow: 1;
   width: calc(33.3333333333% - 40px);
   padding: 15px 20px;
   border: solid 1px #dddddd;
+  position: relative;
+}
+.recommendation--list li .new-ribbon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 89px;
+  height: 91px;
+  overflow: hidden;
+}
+.recommendation--list li .new {
+  display: inline-block;
+  position: absolute;
+  padding: 7px 0;
+  left: -43px;
+  top: 17px;
+  width: 160px;
+  text-align: center;
+  background: #F7320E;
+  color: #fff;
+  transform: rotate(-45deg);
 }
 .recommendation--list li img {
+  max-width: 318px;
+  max-height: 190px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 30px;
 }
 .recommendation--list li h3 {
@@ -284,6 +311,9 @@ a:hover {
 .recommendation--list li > p {
   font-size: 14px;
   line-height: 1.2rem;
+}
+.recommendation--list li .text {
+  height: 100%;
 }
 .recommendation--list li .fee {
   text-align: right;
@@ -313,4 +343,51 @@ a:hover {
   border-right: solid 2px #341E12;
   transform: rotate(45deg);
   margin-left: 5px;
+}
+.recommendation--list li.is-new::before {
+  content: "";
+  top: 0;
+  left: 0;
+  border-bottom: 5rem solid transparent;
+  border-left: 5rem solid #F7320E;
+  position: absolute;
+  z-index: 100;
+}
+.recommendation--list li.is-new::after {
+  content: "新商品";
+  display: block;
+  top: 20px;
+  left: 4px;
+  position: absolute;
+  transform: rotate(-45deg);
+  color: #fff;
+  z-index: 101;
+}
+
+/* ===============================================
+# 商品カテゴリー
+=============================================== */
+.category .category-list {
+  max-width: 1084px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.category .category-list li {
+  width: calc(33.3333333333% - 40px);
+  border: solid 1px #dddddd;
+  flex-grow: 1;
+}
+.category .category-list li a {
+  display: block;
+}
+.category .category-list li a div {
+  display: flex;
+}
+.category .category-list li a div img {
+  max-width: 120px;
+}
+.category .category-list li a div p {
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
