@@ -3,9 +3,6 @@
 # global
 =============================================== */
 /* ===============================================
-# フォント
-=============================================== */
-/* ===============================================
 # フォントサイズ
 =============================================== */
 /* ===============================================
@@ -13,9 +10,6 @@
 =============================================== */
 /* ===============================================
 # base
-=============================================== */
-/* ===============================================
-# フォント
 =============================================== */
 /* ===============================================
 # フォントサイズ
@@ -31,9 +25,18 @@ body {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 p {
   font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
   color: #341E12;
+}
+
+span {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 ul {
@@ -55,9 +58,6 @@ a:hover {
 
 /* ===============================================
 # parts（パーツ）
-=============================================== */
-/* ===============================================
-# フォント
 =============================================== */
 /* ===============================================
 # フォントサイズ
@@ -114,9 +114,49 @@ a:hover {
   left: 18px;
 }
 
-/* ===============================================
-# フォント
-=============================================== */
+#footer {
+  background: #341E12;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer img {
+  margin-bottom: 20px;
+}
+#footer .footer-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#footer .footer-menu li {
+  border-right: solid 1px #fff;
+}
+#footer .footer-menu li:last-child {
+  border-right: none;
+}
+#footer .footer-menu li a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+}
+#footer .privacy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+#footer .privacy p:first-child {
+  border-right: solid 1px #fff;
+}
+#footer .privacy p a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+}
+#footer .copy {
+  font-size: 12px;
+  color: #fff;
+}
+
 /* ===============================================
 # フォントサイズ
 =============================================== */
@@ -162,9 +202,6 @@ a:hover {
 }
 
 /* ===============================================
-# フォント
-=============================================== */
-/* ===============================================
 # フォントサイズ
 =============================================== */
 /* ===============================================
@@ -188,9 +225,6 @@ a:hover {
 
 /* ===============================================
 # pages（ページ）
-=============================================== */
-/* ===============================================
-# フォント
 =============================================== */
 /* ===============================================
 # フォントサイズ
@@ -379,15 +413,109 @@ a:hover {
   border: solid 1px #dddddd;
   flex-grow: 1;
 }
+.category .category-list li:last-child {
+  border: none;
+}
 .category .category-list li a {
   display: block;
 }
 .category .category-list li a div {
   display: flex;
+  align-items: center;
 }
 .category .category-list li a div img {
   max-width: 120px;
 }
 .category .category-list li a div p {
   flex-grow: 1;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* ===============================================
+# 委託販売先
+=============================================== */
+.consignment {
+  padding: 90px 20px 110px 20px;
+  background: #F5EFD7;
+}
+.consignment > h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #341E12;
+}
+.consignment > p {
+  text-align: center;
+  margin-bottom: 80px;
+  line-height: 1.8rem;
+}
+.consignment .consignment--list {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+.consignment .consignment--list li {
+  display: flex;
+  margin-bottom: 40px;
+}
+.consignment .consignment--list li img {
+  max-width: 440px;
+  margin-right: 20px;
+}
+.consignment .consignment--list li > div {
+  flex-grow: 1;
+}
+.consignment .consignment--list li h3 {
+  font-size: 20px;
+  font-weight: bold;
+  background: #341E12;
+  color: #fff;
+  height: 44px;
+  padding-top: 12px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.consignment .consignment--list li p {
+  margin-bottom: 1.2rem;
+}
+.consignment .consignment--list li p span {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+/* ===============================================
+# プロフィール
+=============================================== */
+.profile {
+  padding-top: 90px;
+  text-align: center;
+}
+.profile h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #341E12;
+  margin-bottom: 40px;
+}
+.profile > img {
+  max-width: 140px;
+  margin-bottom: 20px;
+}
+.profile > span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.profile > p {
+  margin-bottom: 40px;
+  line-height: 1.8rem;
+}
+.profile .sns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.profile .sns img {
+  max-width: 80px;
 }/*# sourceMappingURL=style.css.map */

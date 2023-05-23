@@ -8,10 +8,18 @@ body{
   height: 100%;
 }
 
+h1,h2,h3,h4,h5{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 p{
   font-size: $fs;
-  $font-family:'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: $color-tea;
+}
+
+span{
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 ul{
