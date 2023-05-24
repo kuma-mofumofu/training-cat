@@ -6,9 +6,10 @@
   border-radius: 50%;
   background: $color-tea;
   position: fixed;
-  right: 45px;
+  right: 20px;
   bottom: 45px;
   display: none;
+  z-index: 1000;
 
   @media screen and (max-width:800px){
     display: block;

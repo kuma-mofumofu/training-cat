@@ -55,6 +55,11 @@ a:hover {
   padding: 0 20px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    margin-bottom: 80px;
+  }
+}
 
 /* ===============================================
 # parts（パーツ）
@@ -72,11 +77,39 @@ a:hover {
   align-items: center;
   gap: 35px;
 }
+@media screen and (max-width: 800px) {
+  #header .header--first {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #header .header--first .logo {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+#header .header--first .logo img {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  #header .header--first .meaning {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 #header .header--first .meaning > div {
   max-width: 624px;
   padding: 40px;
   border-top: solid 1px #341E12;
   border-bottom: solid 1px #341E12;
+}
+@media screen and (max-width: 800px) {
+  #header .header--first .meaning > div {
+    max-width: 100%;
+    padding: 40px 0;
+  }
 }
 #header .header--first .meaning > div p {
   font-size: 20px;
@@ -84,6 +117,11 @@ a:hover {
 }
 #header .header--last {
   background: #F5EFD7;
+}
+@media screen and (max-width: 800px) {
+  #header .header--last {
+    padding-bottom: 30px;
+  }
 }
 #header .header--last picture img {
   width: 100%;
@@ -117,27 +155,56 @@ a:hover {
 #footer {
   background: #341E12;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 20px;
+  position: relative;
 }
 #footer img {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  #footer img {
+    margin-bottom: 35px;
+  }
 }
 #footer .footer-menu {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 800px) {
+  #footer .footer-menu {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
 #footer .footer-menu li {
   border-right: solid 1px #fff;
 }
+@media screen and (max-width: 800px) {
+  #footer .footer-menu li {
+    border-right: none;
+    border-top: dotted 2px #fff;
+  }
+}
 #footer .footer-menu li:last-child {
   border-right: none;
+}
+@media screen and (max-width: 800px) {
+  #footer .footer-menu li:last-child {
+    border-bottom: dotted 2px #fff;
+  }
 }
 #footer .footer-menu li a {
   color: #fff;
   padding: 0 10px;
   font-size: 12px;
+}
+@media screen and (max-width: 800px) {
+  #footer .footer-menu li a {
+    font-size: 14px;
+    display: inline-block;
+    padding: 15px 0;
+  }
 }
 #footer .privacy {
   display: flex;
@@ -156,6 +223,11 @@ a:hover {
   font-size: 12px;
   color: #fff;
 }
+@media screen and (max-width: 800px) {
+  #footer .copy {
+    margin-bottom: 50px;
+  }
+}
 
 /* ===============================================
 # フォントサイズ
@@ -169,9 +241,10 @@ a:hover {
   border-radius: 50%;
   background: #341E12;
   position: fixed;
-  right: 45px;
+  right: 20px;
   bottom: 45px;
   display: none;
+  z-index: 1000;
 }
 @media screen and (max-width: 800px) {
   .burger {
@@ -221,6 +294,40 @@ a:hover {
   color: #fff;
   display: block;
   text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .btn-tea a span {
+    font-size: 13px;
+  }
+}
+
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#footer .page_top {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #341E12;
+  position: absolute;
+  top: -35px;
+  right: 40px;
+}
+#footer .page_top::before {
+  content: url(/image/ico_paw02.svg);
+}
+#footer .page_top > img {
+  width: 50%;
+  margin-bottom: 0;
+}
+#footer .page_top span {
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
 }
 
 /* ===============================================
@@ -252,6 +359,11 @@ a:hover {
   font-size: 30px;
   font-weight: bold;
 }
+@media screen and (max-width: 800px) {
+  .title .title--inner h2 {
+    font-size: 24px;
+  }
+}
 
 /* ===============================================
 # お知らせ
@@ -266,15 +378,31 @@ a:hover {
   border-top: dotted 2px #CEB967;
   padding: 22px 0;
 }
+@media screen and (max-width: 800px) {
+  .news--list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .news--list li:last-child {
   border-bottom: dotted 2px #CEB967;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 800px) {
+  .news--list li time {
+    margin-bottom: 10px;
+  }
 }
 .news--list li .icon {
   width: 92px;
   text-align: center;
   margin: 0 15px 0 22px;
   padding: 4px 0;
+}
+@media screen and (max-width: 800px) {
+  .news--list li .icon {
+    margin: 0 0 10px 0;
+  }
 }
 .news--list li .icon span {
   font-size: 12px;
@@ -301,13 +429,26 @@ a:hover {
   margin: 0 auto;
   gap: 20px;
 }
+@media screen and (max-width: 800px) {
+  .recommendation--list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .recommendation--list li {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
   width: calc(33.3333333333% - 40px);
   padding: 15px 20px;
   border: solid 1px #dddddd;
   position: relative;
+}
+@media screen and (max-width: 800px) {
+  .recommendation--list li {
+    width: 100%;
+  }
 }
 .recommendation--list li .new-ribbon {
   position: absolute;
@@ -337,16 +478,23 @@ a:hover {
      object-fit: cover;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 800px) {
+  .recommendation--list li img {
+    max-width: 100%;
+    max-height: 400px;
+  }
+}
 .recommendation--list li h3 {
+  font-size: 18px;
   padding-bottom: 7px;
   margin-bottom: 20px;
   border-bottom: dotted 2px #341E12;
 }
 .recommendation--list li > p {
-  font-size: 14px;
   line-height: 1.2rem;
 }
 .recommendation--list li .text {
+  font-size: 14px;
   height: 100%;
 }
 .recommendation--list li .fee {
@@ -408,10 +556,21 @@ a:hover {
   flex-wrap: wrap;
   gap: 20px;
 }
+@media screen and (max-width: 800px) {
+  .category .category-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .category .category-list li {
   width: calc(33.3333333333% - 40px);
   border: solid 1px #dddddd;
   flex-grow: 1;
+}
+@media screen and (max-width: 800px) {
+  .category .category-list li {
+    width: 100%;
+  }
 }
 .category .category-list li:last-child {
   border: none;
@@ -439,16 +598,33 @@ a:hover {
   padding: 90px 20px 110px 20px;
   background: #F5EFD7;
 }
+@media screen and (max-width: 800px) {
+  .consignment {
+    padding: 80px 20px;
+  }
+}
 .consignment > h2 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   color: #341E12;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 800px) {
+  .consignment > h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 }
 .consignment > p {
   text-align: center;
   margin-bottom: 80px;
   line-height: 1.8rem;
+}
+@media screen and (max-width: 800px) {
+  .consignment > p {
+    margin-bottom: 50px;
+  }
 }
 .consignment .consignment--list {
   max-width: 1084px;
@@ -458,9 +634,27 @@ a:hover {
   display: flex;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 800px) {
+  .consignment .consignment--list li {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .consignment .consignment--list li:last-child {
+    margin-bottom: 0;
+  }
+}
 .consignment .consignment--list li img {
   max-width: 440px;
   margin-right: 20px;
+}
+@media screen and (max-width: 800px) {
+  .consignment .consignment--list li img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
 }
 .consignment .consignment--list li > div {
   flex-grow: 1;
@@ -475,8 +669,19 @@ a:hover {
   padding-left: 20px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 800px) {
+  .consignment .consignment--list li h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 .consignment .consignment--list li p {
   margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 800px) {
+  .consignment .consignment--list li p {
+    font-size: 14px;
+  }
 }
 .consignment .consignment--list li p span {
   font-weight: bold;
@@ -491,11 +696,21 @@ a:hover {
   padding-top: 90px;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  .profile {
+    padding-top: 80px;
+  }
+}
 .profile h2 {
   font-size: 30px;
   font-weight: bold;
   color: #341E12;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 800px) {
+  .profile h2 {
+    font-size: 24px;
+  }
 }
 .profile > img {
   max-width: 140px;
@@ -515,6 +730,11 @@ a:hover {
   justify-content: center;
   gap: 40px;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 800px) {
+  .profile .sns {
+    margin-bottom: 80px;
+  }
 }
 .profile .sns img {
   max-width: 80px;

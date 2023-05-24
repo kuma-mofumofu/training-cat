@@ -9,13 +9,39 @@
     align-items: center;
     gap:35px;
 
+    @media screen and (max-width:800px){
+      flex-direction: column;
+      gap: 0;
+      padding-bottom: 30px;
+    }
+
+    .logo{
+      @media screen and (max-width:800px){
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      img{
+        width: 100%;
+      }
+    }
+
     .meaning{
+      @media screen and (max-width:800px){
+        width: 100%;
+        padding: 0 20px;
+      }
 
       > div{
         max-width: 624px;
         padding: 40px;
         border-top: solid 1px $color-tea;
         border-bottom: solid 1px $color-tea;
+
+        @media screen and (max-width:800px){
+          max-width: 100%;
+          padding: 40px 0;
+        }
 
         p{
           font-size: 20px;
@@ -27,6 +53,9 @@
 
   .header--last{
     background: $color-cream;
+    @media screen and (max-width:800px){
+      padding-bottom: 30px;
+    }
 
     picture{
       img{

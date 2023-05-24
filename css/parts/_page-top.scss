@@ -1,0 +1,27 @@
+@import "../global/variables";
+#footer{
+  .page_top{
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    background: $color-tea;
+    position: absolute;
+    top: -35px;
+    right: 40px;
+
+    &::before{
+      content: url(/image/ico_paw02.svg);
+    }
+
+    > img{
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    span{
+      color:$color-white;
+      font-size: 12px;
+      display: inline-block;
+    }
+  }
+}

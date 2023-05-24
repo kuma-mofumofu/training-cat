@@ -14,6 +14,10 @@
       color:$color-white;
       display: block;
       text-align: center;
+      font-weight: bold;
+      @media screen and (max-width:800px){
+        font-size:13px;
+      }
     }
   }
 }
