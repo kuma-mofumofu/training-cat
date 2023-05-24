@@ -6,7 +6,7 @@
   border-radius: 50%;
   background: $color-tea;
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 45px;
   display: none;
   z-index: 1000;
@@ -39,5 +39,19 @@
     position: absolute;
     top: 43px;
     left: 16px;
+  }
+
+  &.is-open{
+    span{
+      &:first-of-type{
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2){
+        display: none;
+      }
+      &:last-of-type{
+        
+      }
+    }
   }
 }

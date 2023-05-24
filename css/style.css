@@ -206,19 +206,6 @@ a:hover {
     padding: 15px 0;
   }
 }
-#footer .privacy {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-}
-#footer .privacy p:first-child {
-  border-right: solid 1px #fff;
-}
-#footer .privacy p a {
-  color: #fff;
-  padding: 0 10px;
-  font-size: 12px;
-}
 #footer .copy {
   font-size: 12px;
   color: #fff;
@@ -227,6 +214,26 @@ a:hover {
   #footer .copy {
     margin-bottom: 50px;
   }
+}
+
+.privacy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.privacy.is-open p:first-child {
+  border-right: solid 1px #341E12;
+}
+.privacy.is-open p a {
+  color: #341E12;
+}
+.privacy p:first-child {
+  border-right: solid 1px #fff;
+}
+.privacy p a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 12px;
 }
 
 /* ===============================================
@@ -241,7 +248,7 @@ a:hover {
   border-radius: 50%;
   background: #341E12;
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 45px;
   display: none;
   z-index: 1000;
@@ -273,7 +280,12 @@ a:hover {
   top: 43px;
   left: 16px;
 }
-
+.burger.is-open span:first-of-type {
+  transform: rotate(45deg);
+}
+.burger.is-open span:nth-of-type(2) {
+  display: none;
+}
 /* ===============================================
 # フォントサイズ
 =============================================== */
@@ -314,20 +326,72 @@ a:hover {
   border-radius: 50%;
   background: #341E12;
   position: absolute;
-  top: -35px;
+  top: -50px;
   right: 40px;
 }
-#footer .page_top::before {
-  content: url(../../image/ico_paw02.svg);
+#footer .page_top .page_top--inner {
+  display: inline-block;
 }
-#footer .page_top > img {
-  width: 50%;
-  margin-bottom: 0;
+#footer .page_top .page_top--inner::before {
+  content: "";
+  background-image: url("../image/cursor.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 10px auto 0 auto;
+  height: 1.5rem;
+  width: 2rem;
+  vertical-align: middle;
 }
 #footer .page_top span {
   color: #fff;
   font-size: 12px;
   display: inline-block;
+}
+
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#header.is-open,
+main.is-open,
+#footer.is-open {
+  display: none;
+}
+
+.open_menu {
+  display: none;
+  padding: 0 20px;
+}
+.open_menu.is-open {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: #F5EFD7;
+  text-align: center;
+}
+.open_menu img {
+  margin: 30px auto 35px auto;
+}
+.open_menu ul {
+  margin-bottom: 45px;
+}
+.open_menu li {
+  border-top: dotted 2px #341E12;
+}
+.open_menu li:last-child {
+  border-bottom: dotted 2px #341E12;
+}
+.open_menu li a {
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.burger.is-open {
+  right: 55px;
 }
 
 /* ===============================================
@@ -482,6 +546,11 @@ a:hover {
   .recommendation--list li img {
     max-width: 100%;
     max-height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recommendation--list li img {
+    max-height: 250px;
   }
 }
 .recommendation--list li h3 {

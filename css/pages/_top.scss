@@ -150,6 +150,9 @@
         max-width: 100%;
         max-height: 400px;
       }
+      @media screen and (max-width:600px){
+        max-height: 250px;
+      }
     }
 
     h3{

@@ -1,0 +1,54 @@
+@import "../global/variables";
+
+#header,
+main,
+#footer{
+
+  &.is-open{
+    display: none;
+  }
+}
+
+.open_menu{
+  display: none;
+  padding: 0 20px;
+
+  &.is-open{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background:#F5EFD7;
+    text-align: center;
+  }
+
+  img{
+    margin: 30px auto 35px auto;
+  }
+
+  ul{
+    margin-bottom: 45px;
+  }
+
+  li{
+    border-top:dotted 2px $color-tea;
+
+    &:last-child{
+      border-bottom:dotted 2px $color-tea;
+    }
+
+    a{
+      display:inline-block;
+      padding: 15px 0;
+      font-size:14px;
+      font-weight: bold;
+    }
+  }
+}
+
+.burger{
+  &.is-open{
+    right: 55px;
+  }
+}
+
+

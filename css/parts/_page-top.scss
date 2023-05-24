@@ -1,21 +1,28 @@
 @import "../global/variables";
 #footer{
+
   .page_top{
     width: 70px;
     height: 70px;
     border-radius:50%;
     background: $color-tea;
     position: absolute;
-    top: -35px;
+    top: -50px;
     right: 40px;
 
-    &::before{
-      content: url(../../image/ico_paw02.svg);
-    }
+    .page_top--inner{
+      display: inline-block;
 
-    > img{
-      width: 50%;
-      margin-bottom: 0;
+      &::before{
+        content:"";
+        background-image:url("../image/cursor.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: 10px auto 0 auto;
+        height: 1.5rem;
+        width: 2rem;
+        vertical-align: middle;
+      }
     }
 
     span{
