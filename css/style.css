@@ -318,7 +318,7 @@ a:hover {
   right: 40px;
 }
 #footer .page_top::before {
-  content: url(/image/ico_paw02.svg);
+  content: url(../../image/ico_paw02.svg);
 }
 #footer .page_top > img {
   width: 50%;
