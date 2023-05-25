@@ -6,6 +6,10 @@
   background: $color-tea;
   border-radius: 5px;
 
+  &:hover{
+    background:$color-yellow-border;
+  }
+
   a{
     display: block;
     padding: 0.5rem 0;

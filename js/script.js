@@ -33,13 +33,14 @@ $(function () {
   =============================================== */
   $(".burger").on("click",function(){
 
-    $(this).toggleClass("is-open");
+    $(".burger,.open_menu,#header,main,#footer,.privacy").
+      toggleClass("is-open");
 
-    $(".open_menu").toggleClass("is-open");
-    $("#header").toggleClass("is-open");
-    $("main").toggleClass("is-open");
-    $("#footer").toggleClass("is-open");
-    $(".privacy").toggleClass("is-open");
+    if($(".burger--text").text() === "MENU"){
+      $(".burger--text").text("CLOSE");
+    } else {
+      $(".burger--text").text("MENU");
+    }
   });
 
 });

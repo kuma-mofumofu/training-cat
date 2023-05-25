@@ -42,6 +42,10 @@
         padding: 0 10px;
         font-size: 12px;
 
+        &:hover{
+          color: $color-yellow-border;
+        }
+
         @media screen and (max-width:800px){
           font-size:14px;
           display: inline-block;
@@ -74,6 +78,10 @@
 
       a{
         color: $color-tea;
+
+        &:hover{
+          color: $color-yellow;
+        }
       }
     }
   }
@@ -87,6 +95,10 @@
       color:$color-white;
       padding: 0 10px;
       font-size: 12px;
+
+      &:hover{
+        color: $color-yellow-border;
+      }
     }
   }
 }

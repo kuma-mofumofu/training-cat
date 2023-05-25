@@ -187,11 +187,17 @@
       text-align: center;
       border-radius:5px;
 
+      &:hover{
+        background:$color-cream;
+        border: solid 1px $color-yellow;
+      }
+
       a{
         font-size:14px;
         font-weight: bold;
         display: block;
         padding: 15px 0;
+        color: $color-tea;
 
         span{
 
@@ -244,6 +250,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
     @media screen and (max-width:800px){
       flex-direction: column;
       align-items: center;
@@ -253,8 +260,14 @@
       width: calc(100% / 3 - 40px);
       border: solid 1px $color-gray;
       flex-grow: 1;
+
       @media screen and (max-width:800px){
         width: 100%;
+      }
+
+      &:hover{
+        background:$color-cream;
+        border: solid 1px $color-yellow;
       }
 
       &:last-child{

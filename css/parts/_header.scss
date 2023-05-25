@@ -87,6 +87,13 @@
             top: 18px;
             left: 18px;
           }
+
+          &:hover{
+
+            &::before{
+              content: url(../image/ico_paw_o.svg);
+            }
+          }
         }
       }
     }

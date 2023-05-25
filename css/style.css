@@ -151,6 +151,9 @@ a:hover {
   top: 18px;
   left: 18px;
 }
+#header .header--last .menu li .menu-list:hover::before {
+  content: url(../image/ico_paw_o.svg);
+}
 
 #footer {
   background: #341E12;
@@ -199,6 +202,9 @@ a:hover {
   padding: 0 10px;
   font-size: 12px;
 }
+#footer .footer-menu li a:hover {
+  color: #CEB967;
+}
 @media screen and (max-width: 800px) {
   #footer .footer-menu li a {
     font-size: 14px;
@@ -227,6 +233,9 @@ a:hover {
 .privacy.is-open p a {
   color: #341E12;
 }
+.privacy.is-open p a:hover {
+  color: #A88E25;
+}
 .privacy p:first-child {
   border-right: solid 1px #fff;
 }
@@ -234,6 +243,9 @@ a:hover {
   color: #fff;
   padding: 0 10px;
   font-size: 12px;
+}
+.privacy p a:hover {
+  color: #CEB967;
 }
 
 /* ===============================================
@@ -260,6 +272,7 @@ a:hover {
 }
 .burger:hover {
   cursor: pointer;
+  background: #CEB967;
 }
 .burger > div {
   position: absolute;
@@ -272,6 +285,7 @@ a:hover {
   height: 2px;
   background: #fff;
   margin-bottom: 7px;
+  transition: 0.3s;
 }
 .burger > p {
   font-size: 12px;
@@ -282,10 +296,20 @@ a:hover {
 }
 .burger.is-open span:first-of-type {
   transform: rotate(45deg);
+  position: absolute;
+  top: 9px;
+  transition: 0.3s;
 }
 .burger.is-open span:nth-of-type(2) {
   display: none;
 }
+.burger.is-open span:last-of-type {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  transition: 0.3s;
+}
+
 /* ===============================================
 # フォントサイズ
 =============================================== */
@@ -297,6 +321,9 @@ a:hover {
   height: 30px;
   background: #341E12;
   border-radius: 5px;
+}
+.btn-tea:hover {
+  background: #CEB967;
 }
 .btn-tea a {
   display: block;
@@ -328,6 +355,9 @@ a:hover {
   position: absolute;
   top: -50px;
   right: 40px;
+}
+#footer .page_top:hover {
+  background: #CEB967;
 }
 #footer .page_top .page_top--inner {
   display: inline-block;
@@ -580,11 +610,16 @@ main.is-open,
   text-align: center;
   border-radius: 5px;
 }
+.recommendation--list li .btn:hover {
+  background: #F5EFD7;
+  border: solid 1px #A88E25;
+}
 .recommendation--list li .btn a {
   font-size: 14px;
   font-weight: bold;
   display: block;
   padding: 15px 0;
+  color: #341E12;
 }
 .recommendation--list li .btn a span {
   display: inline-block;
@@ -640,6 +675,10 @@ main.is-open,
   .category .category-list li {
     width: 100%;
   }
+}
+.category .category-list li:hover {
+  background: #F5EFD7;
+  border: solid 1px #A88E25;
 }
 .category .category-list li:last-child {
   border: none;

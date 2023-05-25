@@ -10,6 +10,10 @@
     top: -50px;
     right: 40px;
 
+    &:hover{
+      background:$color-yellow-border;
+    }
+
     .page_top--inner{
       display: inline-block;
 
