@@ -1,0 +1,25 @@
+@import "../global/variables";
+
+.lower_title{
+  text-align: center;
+  margin-bottom: 60px;
+
+  img{
+    margin-bottom: 15px;
+  }
+
+  h2{
+    font-size:40px;
+    font-weight: bold;
+    color: $color-tea;
+    margin-bottom: 15px;
+    letter-spacing: .2em;
+  }
+
+  span{
+    font-size:20px;
+    font-weight: bold;
+    color:$color-yellow-border;
+    letter-spacing: .2em;
+  }
+}

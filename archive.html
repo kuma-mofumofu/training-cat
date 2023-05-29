@@ -14,10 +14,156 @@
   </head>
 
 <body>
-  <div class="product_+list">
+  <div id="product_list">
+    <header id="header">
+
+      <div class="header--first">
+        <div class="logo">
+          <img src="image/logo_under_header.svg" alt="">
+        </div>
+      </div><!-- /header--first -->
+
+      <div class="header--last">
+        <picture>
+          <source media="(max-width: 800px)" srcset="image/bg_top_header_sp.jpg">
+          <img src="image/bg_top_header.jpg" alt="">
+        </picture>
+        <nav>
+          <ul class="menu">
+            <li><a href="#" class="menu-list">商品一覧</a></li>
+            <li><a href="#" class="menu-list">ねこブログ</a></li>
+            <li><a href="#" class="menu-list">ねこ店員紹介</a></li>
+            <li><a href="#" class="menu-list">よくある質問</a></li>
+            <li><a href="#" class="menu-list">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div><!-- /header--last -->
+
+    </header>
+
+    <div class="burger">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p class="burger--text">MENU</p>
+    </div><!-- /burger -->
+
+    <div class="open_menu">
+      <img src="image/logo_small.svg" alt="ロゴ">
+
+      <ul>
+        <li>
+          <a href="#">トップページ</a>
+        </li>
+        <li>
+          <a href="#">商品一覧</a>
+        </li>
+        <li>
+          <a href="#">ねこブログ</a>
+        </li>
+        <li>
+          <a href="#">ねこ店員紹介</a>
+        </li>
+        <li>
+          <a href="#">よくあるご質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+
+      <div class="privacy">
+        <p><a href="#">特定商取引法に関する表記</a></p>
+        <p><a href="#">プライバシーポリシー</a></p>
+      </div>
+    </div>
+
+    <div class="breadcrumb"><!-- パンくず -->
+      <span><a href="/front-page.html">ホーム</a></span>
+      <span>商品一覧</span>
+    </div>
 
     <main>
+      <div class="lower_title">
+        <img src="image/ico_paw02.svg" alt="">
+        <h2>商品一覧</h2>
+        <span>PRODUCTS</span>
+      </div>
 
+      <ul class="category_tag">
+
+        <li class="tag_list is-open">
+          <a href="#">すべて</a>
+        </li>
+
+        <li class="tag_list">
+          <a href="#">レジンブローチ</a>
+        </li>
+
+        <li class="tag_list">
+          <a href="#">猫用首輪</a>
+        </li>
+
+        <li class="tag_list">
+          <a href="#">けりぐるみ</a>
+        </li>
+
+        <li class="tag_list">
+          <a href="#">アクセサリー</a>
+        </li>
+
+        <li class="tag_list">
+          <a href="#">その他雑貨</a>
+        </li>
+        
+      </ul><!-- .category_tag -->
+
+      <section class="container">
+        <ul class="recommendation--list">
+
+          <li>
+            <div class="new-ribbon">
+              <span class="new">新商品</span>
+            </div>
+            <img src="image/dmy_pd001.jpg" alt="【焼印付】爪とぎ型キーホルダー">
+            <h3>【焼印付】爪とぎ型キーホルダー</h3>
+            <p class="txt-limit">可愛らしいミニチュアサイズの「猫の爪とぎ」型キーホルダー。木製ケースの裏面には猫シルエットの焼印付きでオシャレ！</p>
+            <p class="fee">000円<span>(税抜)</span></p>
+            <div class="btn">
+              <a href="#">
+                詳細を見る<span></span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/dmy_pd002.jpg" alt="肉球ブローチ（7個セット）">
+            <h3>肉球ブローチ（7個セット）</h3>
+            <p class="txt-limit">定番の肉球型のレジンブローチ（7個セット）です。</p>
+            <p class="fee">000円<span>(税抜)</span></p>
+            <div class="btn">
+              <a href="#">
+                詳細を見る<span></span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <img src="image/dmy_pd003.jpg" alt="レース猫首輪（鈴付き）">
+            <h3>レース猫首輪（鈴付き）</h3>
+            <p class="txt-limit">アースカラーのレース＋アンティーク調の金具でシックな印象の猫首輪です。</p>
+            <p class="fee">000円<span>(税抜)</span></p>
+            <div class="btn">
+              <a href="#">
+                詳細を見る<span></span>
+              </a>
+            </div>
+          </li>
+
+        </ul><!-- .recommendation--list -->
+      </section>
     </main>
 
     <footer id="footer">
@@ -27,7 +173,6 @@
           <span>PAGE TOP</span>
         </a>
       </div>
-
 
       <img src="image/logo_footer.svg" alt="ロゴ">
 
@@ -49,10 +194,11 @@
 
       <p class="copy">© l’atelier Queue All Rights Reserved. 2021</p>
     </footer>
-  </div><!-- / -->
+  </div><!-- /#product_list -->
 
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/category_tag.js"></script>
 </body>
 </html>
